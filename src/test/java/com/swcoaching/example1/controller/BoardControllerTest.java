@@ -2,6 +2,7 @@ package com.swcoaching.example1.controller;
 
 import com.swcoaching.example1.board.Board;
 import com.swcoaching.example1.board.BoardService;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +40,7 @@ class BoardControllerTest {
 
         // then
         resultActions
-                .andExpect(jsonPath("$.id").value(is((int) id)))
+                .andExpect(jsonPath("$.id1").value(is((int) id)))
                 .andExpect(jsonPath("$.title").value(is(title)))
                 .andExpect(jsonPath("$.remark").value(is(remark)));
     }
