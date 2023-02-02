@@ -40,7 +40,7 @@ class BoardControllerTest {
 
         // then
         resultActions
-                .andExpect(jsonPath("$.id").value(is((int) id)))
+                .andExpect(jsonPath("$.id1").value(is((int) id)))
                 .andExpect(jsonPath("$.title").value(is(title)))
                 .andExpect(jsonPath("$.remark").value(is(remark)));
     }
